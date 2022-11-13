@@ -64,8 +64,7 @@ function Sorter() {
       </select>
       <button
         type="submit"
-        className="flex text-white px-8 py-2 rounded-full mt-4 border-2 font-semibold transition-colors
-        bg-fleks-dark border-fleks-dark hover:bg-white hover:text-fleks-dark"
+        className="flex px-8 py-2 mt-4 font-semibold text-white transition-colors border-2 rounded-full bg-fleks-dark border-fleks-dark hover:bg-white hover:text-fleks-dark"
       >
         Sort
       </button>
