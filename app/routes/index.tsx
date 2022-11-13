@@ -25,8 +25,6 @@ const getLoaderData = async (searchParams: URLSearchParams) => {
   const order = searchParams.get("order");
   const people: TPerson[] = getPeople();
 
-  console.log({ field, order });
-
   if (!order || (order !== "asc" && order !== "dsc")) {
     const sortOptions: TSortOptions = { field: "none", order: "asc" };
     return { people, sortOptions };

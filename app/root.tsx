@@ -1,17 +1,10 @@
 import type { MetaFunction, LinksFunction } from "@remix-run/node";
-import {
-  Links,
-  LiveReload,
-  Meta,
-  Outlet,
-  Scripts,
-  ScrollRestoration,
-} from "@remix-run/react";
+import { Links, LiveReload, Meta, Outlet } from "@remix-run/react";
 import styles from "./tailwind.css";
 
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
-  title: "Fleks Birthdays",
+  title: "Birthdays",
   viewport: "width=device-width,initial-scale=1",
 });
 

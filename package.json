@@ -6,7 +6,7 @@
     "build:css": "pnpm generate:css -- --minify",
     "build:remix": "remix build",
     "dev": "run-p \"dev:*\"",
-    "dev:css": "pnpm generate:css -- --watch",
+    "dev:css": "pnpm generate:css --watch",
     "dev:remix": "remix dev",
     "generate:css": "tailwindcss -o ./app/tailwind.css",
     "start": "remix-serve build",

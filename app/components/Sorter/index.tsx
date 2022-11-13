@@ -62,7 +62,13 @@ function Sorter() {
           Descending
         </option>
       </select>
-      <button type="submit">Sort</button>
+      <button
+        type="submit"
+        className="flex text-white px-8 py-2 rounded-full mt-4 border-2 font-semibold transition-colors
+        bg-fleks-dark border-fleks-dark hover:bg-white hover:text-fleks-dark"
+      >
+        Sort
+      </button>
     </form>
   );
 }
