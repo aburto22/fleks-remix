@@ -1,10 +1,10 @@
-import Sorter from "../Sorter";
+import Sorter from "./Sorter";
 import { getName } from "~/lib/people";
-import Person from "../Person";
+import Person from "./Person";
 import { useLoaderData } from "@remix-run/react";
 import type { IndexLoaderData } from "~/routes/index";
 
-function Table() {
+function Container() {
   const { people } = useLoaderData<IndexLoaderData>();
 
   return (
@@ -28,4 +28,4 @@ function Table() {
   );
 }
 
-export default Table;
+export default Container;

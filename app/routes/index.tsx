@@ -1,8 +1,9 @@
 import { json, redirect } from "@remix-run/node";
 import type { LoaderFunction, ActionFunction } from "@remix-run/node";
-import People from "~/components/People";
+import Container from "~/components/Container";
 import { getPeople, sortPeople } from "~/lib/people";
 import type { TPerson, TSortOptions } from "~/types";
+import MainLayout from "~/layouts/Main";
 
 export const action: ActionFunction = async ({ request }) => {
   const body = await request.formData();
@@ -56,13 +57,8 @@ export type IndexLoaderData = Awaited<ReturnType<typeof getLoaderData>>;
 
 export default function Index() {
   return (
-    <div className="text-fleks-dark">
-      <header>
-        <h1 className="py-6 text-3xl font-bold text-center text-white bg-fleks-dark">
-          Birthdays
-        </h1>
-      </header>
-      <People />
-    </div>
+    <MainLayout>
+      <Container />
+    </MainLayout>
   );
 }

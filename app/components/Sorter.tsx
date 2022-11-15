@@ -1,11 +1,12 @@
 import { useLoaderData } from "@remix-run/react";
+import { Form } from "@remix-run/react";
 import type { IndexLoaderData } from "~/routes";
 
 function Sorter() {
   const { sortOptions } = useLoaderData<IndexLoaderData>();
 
   return (
-    <form
+    <Form
       className="flex flex-col items-center justify-center max-w-md py-8 mx-auto mt-4 mb-8 rounded-lg shadow-lg"
       method="post"
       action="?index"
@@ -68,7 +69,7 @@ function Sorter() {
       >
         Sort
       </button>
-    </form>
+    </Form>
   );
 }
 
